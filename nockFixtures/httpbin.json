@@ -1,0 +1,71 @@
+[
+    {
+        "scope": "http://httpbin.org:80",
+        "method": "get",
+        "path": "/get",
+        "body": "",
+        "status": 200,
+        "response": {
+            "args": {},
+            "headers": {
+                "Accept": "application/json, text/plain, */*",
+                "Connection": "close",
+                "Host": "httpbin.org",
+                "User-Agent": "axios/0.18.0"
+            },
+            "origin": "219.126.158.145",
+            "url": "http://httpbin.org/get"
+        },
+        "rawHeaders": [
+            "Connection",
+            "close",
+            "Server",
+            "gunicorn/19.8.1",
+            "Date",
+            "Tue, 17 Jul 2018 14:03:24 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "197",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Credentials",
+            "true",
+            "Via",
+            "1.1 vegur"
+        ]
+    },
+    {
+        "scope": "http://httpbin.org:80",
+        "method": "get",
+        "path": "/headers",
+        "body": "",
+        "status": 200,
+        "response": {
+            "headers": {
+                "Accept": "application/json, text/plain, */*",
+                "Connection": "close",
+                "Host": "httpbin.org",
+                "User-Agent": "axios/0.18.0"
+            }
+        },
+        "rawHeaders": [
+            "Connection",
+            "close",
+            "Server",
+            "gunicorn/19.8.1",
+            "Date",
+            "Tue, 17 Jul 2018 14:03:24 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "129",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Credentials",
+            "true",
+            "Via",
+            "1.1 vegur"
+        ]
+    }
+]
