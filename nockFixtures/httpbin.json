@@ -1,20 +1,30 @@
 [
     {
         "scope": "http://httpbin.org:80",
-        "method": "get",
-        "path": "/get",
-        "body": "",
+        "method": "post",
+        "path": "/post",
+        "body": {
+            "timestamp": "Sat Jul 21 2018 15:09:48 GMT+0900 (JST)"
+        },
         "status": 200,
         "response": {
             "args": {},
+            "data": "{\"timestamp\":\"Sat Jul 21 2018 15:09:48 GMT+0900 (JST)\"}",
+            "files": {},
+            "form": {},
             "headers": {
                 "Accept": "application/json, text/plain, */*",
                 "Connection": "close",
+                "Content-Length": "55",
+                "Content-Type": "application/json;charset=utf-8",
                 "Host": "httpbin.org",
                 "User-Agent": "axios/0.18.0"
             },
+            "json": {
+                "timestamp": "Sat Jul 21 2018 15:09:48 GMT+0900 (JST)"
+            },
             "origin": "219.126.158.145",
-            "url": "http://httpbin.org/get"
+            "url": "http://httpbin.org/post"
         },
         "rawHeaders": [
             "Connection",
@@ -22,44 +32,11 @@
             "Server",
             "gunicorn/19.8.1",
             "Date",
-            "Tue, 17 Jul 2018 14:03:24 GMT",
+            "Sat, 21 Jul 2018 06:09:49 GMT",
             "Content-Type",
             "application/json",
             "Content-Length",
-            "197",
-            "Access-Control-Allow-Origin",
-            "*",
-            "Access-Control-Allow-Credentials",
-            "true",
-            "Via",
-            "1.1 vegur"
-        ]
-    },
-    {
-        "scope": "http://httpbin.org:80",
-        "method": "get",
-        "path": "/headers",
-        "body": "",
-        "status": 200,
-        "response": {
-            "headers": {
-                "Accept": "application/json, text/plain, */*",
-                "Connection": "close",
-                "Host": "httpbin.org",
-                "User-Agent": "axios/0.18.0"
-            }
-        },
-        "rawHeaders": [
-            "Connection",
-            "close",
-            "Server",
-            "gunicorn/19.8.1",
-            "Date",
-            "Tue, 17 Jul 2018 14:03:24 GMT",
-            "Content-Type",
-            "application/json",
-            "Content-Length",
-            "129",
+            "421",
             "Access-Control-Allow-Origin",
             "*",
             "Access-Control-Allow-Credentials",

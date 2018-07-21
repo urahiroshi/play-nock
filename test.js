@@ -6,13 +6,14 @@ nockBack.fixtures = __dirname + '/nockFixtures';
 
 const test = async () => {
   const { nockDone } = await nockBack('httpbin.json');
-  const res = await axios.get('http://httpbin.org/get');
+  const res = await axios.post('http://httpbin.org/post', { timestamp: (new Date()).toString() });
   console.log(res.data);
   nockDone();
 };
 
 test().then(() => {
   process.exit(0);
-}).catch(() => {
+}).catch((e) => {
+  console.log(e.message);
   process.exit(1);
 });
